@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Underwater Seaweed Drone Unit</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Repl.it_logo.svg/220px-Repl.it_logo.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+
+<div class="container">
+
+    <!--────────────────Header───────────────-->
+    <header>
+        <a class="logo" href="#home">
+            <img src="logo.png" alt="Underwater Drone logo" />
+        </a>
+        <nav>
+            <ul class="nav-bar"><div class="bg"></div>
+                <li><a class="nav-link active" href="#home">Home</a></li>
+                <li><a class="nav-link" href="#features">Features</a></li>
+                <li><a class="nav-link" href="#chat">Chat</a></li>
+                <li><a class="nav-link" href="#discord">Discord</a></li>
+                <li><a class="nav-link" href="#future">Future</a></li>
+            </ul>
+
+            <div class="hamburger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!--─────────────────Home────────────────-->
+        <div id="home">
+            <div class="filter"></div>
+            <section class="intro">
+                <h3>The Underwater Seaweed Drone Unit.<hr></h3>
+                <p>Our project, the Underwater Seaweed Drone Inspection Investigation, was born out of a pressing need to address some of the environmental challenges that our oceans face today. The inspiration came from our deepening understanding of the crucial role seaweed plays in the ecosystem. Seaweed is known for its remarkable ability to absorb carbon dioxide (CO2) from the atmosphere, making it one of the most effective natural solutions to combat climate change. This vital plant not only helps in reducing greenhouse gases but also contributes to oxygen production, creating a healthier environment for both marine life and humans.</p>
+                <p>  However, during our research, we encountered a significant threat to seaweed populations: sea urchins. These spiny marine creatures are voracious eaters of seaweed, and their growing populations can devastate underwater forests, leading to a decline in biodiversity and a reduction in the ecological services that seaweed provides. The juxtaposition of the benefits of seaweed against the challenges posed by sea urchins sparked the idea for our project. We envisioned developing an underwater drone that could not only detect sea urchins but also analyze water conditions to ensure the survival and growth of seaweed.</p>
+                <p>Our project, The Underwater Seaweed Drone Inspection Investigation (Now Underwater Sea Drone Unit), integrates advanced technologies to detect sea urchins and support seaweed sustainability. At its core is a Raspberry Pi 4 Model B, which powers the system and runs a TensorFlow-based AI model trained using Google’s Teachable Machine to identify sea urchins via a Raspberry Pi Camera Module. To handle the computational demands of real-time detection, we incorporated a Google Coral USB Accelerator (TPU) for efficient AI processing. A GPS module enables precise geotagging of sea urchin locations, which are visualized using Google Maps APIs, while a Discord webhook delivers instant notifications of detections. Future upgrades, if additional time and funding were available, include a professional underwater camera for higher detection accuracy, a water quality testing module to measure pH and chemical levels for seaweed growth, and a high-capacity lithium-ion battery for longer underwater operation. Enhanced waterproofing and durability, using marine-grade aluminum and epoxy seals, are also planned to improve the system’s resilience in marine environments. By combining current and future technologies, this project demonstrates the potential for innovative solutions to protect and support critical underwater ecosystems.
+</p>
+                <p>Join us as we work toward a sustainable future!</p>
+                <div class="social-media">
+                    <a href="https://yitce.carrd.co/" target="_blank"><i class='fab fa-twitter'></i></a>
+                    <a href="https://yitce.carrd.co/" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </section> 
+        </div>  
+
+        <!--───────────────Features───────────────-->
+
+        <div id="features">
+            <h3>Features.<hr></h3>
+            <p>The Underwater Seaweed Drone Unit is designed to address key environmental issues:</p>
+            <div class="work-box">
+                <div class="work">
+                        <!-- Flip Card 1: Seaweed Protection -->
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="seaweed.png" alt="Seaweed Protection">
+                                    <div class="work-content">Seaweed Protection</div>
+                                </div>
+                                <div class="flip-card-back">
+                                    <h1>Seaweed Protection</h1>
+                                    <p1>Detects and maps sea urchin infestations to prevent damage to seaweed ecosystems.                                  </p1>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- Flip Card 2: Water Quality Monitoring -->
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="water_quality.png" alt="Water Quality Monitoring">
+                                    <div class="work-content">Water Quality Monitoring</div>
+                                </div>
+                                <div class="flip-card-back">
+                                    <h1>Water Quality Monitoring</h1>
+                                    <p1>Tests for pH levels, pollutants, and other factors critical to seaweed growth.</p1>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- Flip Card 3: AI and Machine Learning -->
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="ai.jpg" alt="AI and Machine Learning">
+                                    <div class="work-content">AI and Machine Learning</div>
+                                </div>
+                                <div class="flip-card-back">
+                                    <h1>Machine Learning</h1>
+                                    <p1>Utilizes TensorFlow and Teachable Machine for real-time data processing and image recognition.</p1>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- Flip Card 4: GPS Integration -->
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="gps.png" alt="GPS Integration">
+                                    <div class="work-content">GPS Integration</div>
+                                </div>
+                                <div class="flip-card-back">
+                                    <h1>GPS Integration</h1>
+                                    <p1>Pinpoints the location of sea urchins and tracks the drone’s underwater path.</p1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        <!--───────────────Chat────────────────-->
+        <div id="chat">
+            <h3>Chat.<hr></h3>
+            <iframe height="80%" width="30%" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/8a06c7f5-c12f-4c2f-83d1-cf63341e4738"></iframe>
+            <p>Have questions? Use our AI-powered chat for support or inquiries about our project.</p>
+        </div>
+
+        <!--───────────────Discord────────────────-->
+        <div id="discord">
+            <section class="discord">
+                <h3>Discord (BETA).<hr></h3>
+                <widgetbot
+                  server="1273524527778893881"
+                  channel="1273553060253270077"
+                  width="1100"
+                  height="450"
+                ></widgetbot>     
+                <script src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>
+                <p>Our Discord for the most current sea urchin updates</p>
+            </section>
+        </div>
+
+        <!--───────────────Future────────────────-->
+        <div id="future">
+            <h3>Future Developments.<hr></h3>
+            <p>If additional time and funding were available, include a professional underwater camera for higher detection accuracy, a water quality testing module to measure pH and chemical levels for seaweed growth, and a high-capacity lithium-ion battery for longer underwater operation. Enhanced waterproofing and durability, using marine-grade aluminum and epoxy seals, are also planned to improve the system’s resilience in marine environments. By combining current and future technologies, this project demonstrates the potential for innovative solutions to protect and support critical underwater ecosystems.</p>
+            <p>We envision partnerships with marine biologists, environmental organizations, and technology firms to scale our solution and deploy it in marine conservation zones worldwide.</p>
+            <p>By fostering collaboration, we hope to make a lasting impact in combating climate change and supporting biodiversity.</p>
+            <p><p>
+            <p>Another addition to this project's value could be its impact not just on kelp forests but also on agriculture and invasive species monitoring. This system could be brought above the water and turned into an air drone, allowing it to do agriculture. In agro it could do weed spoting and burning if a small point-and-shoot laser was attached. It could also check if all of the seedlings are planted and growing well, it could do periodic checks on crops and flag ones that need attention. You could keep the drone with wings and a solar panel, and pick up bits of trash and dump them on boats. It could stay under the water and find invasive green shore crabs or carp. This all could be done very easily by just taking the shell of the project and putting propellers on it or just tweaking the software. <p>
+        </div>
+    </main>
+
+    <footer class="copyright">© 2025 
+        <a href="https://yitce.carrd.co/" target="_blank"> Underwater Drone Team</a>
+    </footer>
+
+</div>
+
+<script src="https://replit.com/public/js/replit-badge.js" theme="purple" defer></script>
+</body>
+</html>
