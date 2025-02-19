@@ -95,7 +95,7 @@ a.nav-link {
 }
 
 #home .filter {
-    background: url("background.png");
+    /*background: url("background.png");*/
     background-size: cover;
     background-position: center;
     position: absolute;
@@ -325,22 +325,91 @@ h3 {
 ──────────────────*/
 
 #chat {
-    padding-top: 100px;
-    margin: auto;
-    padding-bottom: 100px;
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: var(--main-fonts-color);
+    font-family: 'Arial', sans-serif;
+    background-color: #DEF2F1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin: 20px auto;
 }
 
-#chat p {
+.chat-container {
     padding: 10px;
-    text-align: center;
-    font-size: 1.2rem;
-    font-family: var(--main-font-family);
+    background: #FEFFFF;
+    border-radius: 10px;
+}
+
+.chat-box {
+    max-height: 300px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #2B7A78;
+    border-radius: 5px;
+    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.chat-box .message {
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    line-height: 1.5;
+}
+
+.chat-box .message.bot {
+    background: #3AAFA9;
+    color: #FEFFFF;
+}
+
+.chat-box .message.user {
+    background: #2B7A78;
+    color: #FEFFFF;
+    align-self: flex-end;
+}
+
+.chat-input-container {
+    display: flex;
+    gap: 10px;
+}
+
+.chat-input-container input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #2B7A78;
+    border-radius: 5px;
+}
+
+.chat-input-container button {
+    padding: 10px 20px;
+    background: #2B7A78;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.chat-input-container button:hover {
+    background: #17252A;
+}
+
+#memory {
+    margin: 20px auto;
+    max-width: 600px;
+    background: #FEFFFF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#memory-box {
+    margin-top: 10px;
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #2B7A78;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 /*──────────────────
@@ -369,10 +438,10 @@ h3 {
 }
 
 /*──────────────────
-      Startup
+    applications
 ──────────────────*/
 
-#startup {
+#applications {
     margin-top: 100px;
     height: 400px;
     display: flex;
@@ -385,11 +454,11 @@ h3 {
     padding: 70px;
 }
 
-#startup h3 {
+#applications h3 {
     padding-top: 70px;
 }
 
-#startup p {
+#applications p {
     font-family: var(--main-font-family);
     font-size: 1.2rem;
     padding: 10px;
@@ -463,7 +532,7 @@ hr {
      Scrollbar
 ──────────────────*/
 ::-webkit-scrollbar {
-    width: 5px; 
+    width: 15px; 
     background: rgba(5, 5, 5, 1);
 }
 ::-webkit-scrollbar-thumb {
