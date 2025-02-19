@@ -6,7 +6,6 @@
     <title>The Underwater Seaweed Drone Unit</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
-    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Repl.it_logo.svg/220px-Repl.it_logo.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="script.js"></script>
 </head>
@@ -26,6 +25,7 @@
                 <li><a class="nav-link" href="#chat">Chat</a></li>
                 <li><a class="nav-link" href="#discord">Discord</a></li>
                 <li><a class="nav-link" href="#future">Future</a></li>
+                <li><a class="nav-link" href="#applications">Applications</a></li>
             </ul>
 
             <div class="hamburger">
@@ -123,10 +123,104 @@
 
         <!--───────────────Chat────────────────-->
         <div id="chat">
-            <h3>Chat.<hr></h3>
-            <iframe height="80%" width="30%" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/8a06c7f5-c12f-4c2f-83d1-cf63341e4738"></iframe>
-            <p>Have questions? Use our AI-powered chat for support or inquiries about our project.</p>
+            <h3 style="color: #3AAFA9;">Chat</h3>
+            <hr style="border-color: #2B7A78;">
+            <p style="color: #17252A;">Have questions? Use our AI-powered chat for support or inquiries about our project.</p>
+            
+            <div class="chat-container">
+                <div id="chat-box" class="chat-box">
+                    <div class="message bot">
+                        Hi! I'm AquaBot. How can I assist you today?
+                    </div>
+                </div>
+
+                <div class="chat-input-container">
+                    <input type="text" id="user-input" placeholder="Type your message here..." />
+                    <button id="send-button">Send</button>
+                </div>
+            </div>
         </div>
+
+        <style>
+            /* Basic styling for the chat section */
+            #chat {
+                font-family: 'Arial', sans-serif;
+                background-color: #DEF2F1;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+                max-width: 600px;
+                margin: 20px auto;
+            }
+
+            .chat-container {
+                padding: 10px;
+                background: #FEFFFF;
+                border-radius: 10px;
+            }
+
+            .chat-box {
+                max-height: 300px;
+                overflow-y: auto;
+                margin-bottom: 10px;
+                padding: 10px;
+                background: #fff;
+                border: 1px solid #2B7A78;
+                border-radius: 5px;
+                box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.1);
+            }
+
+            .chat-box .message {
+                margin: 5px 0;
+                padding: 10px;
+                border-radius: 5px;
+                line-height: 1.5;
+            }
+
+            .chat-box .message.bot {
+                background: #3AAFA9;
+                color: #FEFFFF;
+            }
+
+            .chat-box .message.user {
+                background: #2B7A78;
+                color: #FEFFFF;
+                align-self: flex-end;
+            }
+
+            .chat-input-container {
+                display: flex;
+                gap: 10px;
+            }
+
+            .chat-input-container input {
+                flex: 1;
+                padding: 10px;
+                border: 1px solid #2B7A78;
+                border-radius: 5px;
+                transition: border-color 0.3s;
+            }
+
+            .chat-input-container input:focus {
+                border-color: #3AAFA9;
+                outline: none;
+            }
+
+            .chat-input-container button {
+                padding: 10px 20px;
+                background: #2B7A78;
+                color: #fff;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background 0.3s;
+            }
+
+            .chat-input-container button:hover {
+                background: #17252A;
+            }
+        </style>
+
 
         <!--───────────────Discord────────────────-->
         <div id="discord">
@@ -139,7 +233,7 @@
                   height="450"
                 ></widgetbot>     
                 <script src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>
-                <p>Our Discord for the most current sea urchin updates</p>
+                <p>Our Discord for the most current Sea Urchin updates</p>
             </section>
         </div>
 
@@ -149,17 +243,20 @@
             <p>If additional time and funding were available, include a professional underwater camera for higher detection accuracy, a water quality testing module to measure pH and chemical levels for seaweed growth, and a high-capacity lithium-ion battery for longer underwater operation. Enhanced waterproofing and durability, using marine-grade aluminum and epoxy seals, are also planned to improve the system’s resilience in marine environments. By combining current and future technologies, this project demonstrates the potential for innovative solutions to protect and support critical underwater ecosystems.</p>
             <p>We envision partnerships with marine biologists, environmental organizations, and technology firms to scale our solution and deploy it in marine conservation zones worldwide.</p>
             <p>By fostering collaboration, we hope to make a lasting impact in combating climate change and supporting biodiversity.</p>
-            <p><p>
+        </div>
+
+        <!-------------Possible abilitys---------------->
+        <div id="applications">
+            <h3>Possible Applications?<hr></h3>
             <p>Another addition to this project's value could be its impact not just on kelp forests but also on agriculture and invasive species monitoring. This system could be brought above the water and turned into an air drone, allowing it to do agriculture. In agro it could do weed spoting and burning if a small point-and-shoot laser was attached. It could also check if all of the seedlings are planted and growing well, it could do periodic checks on crops and flag ones that need attention. You could keep the drone with wings and a solar panel, and pick up bits of trash and dump them on boats. It could stay under the water and find invasive green shore crabs or carp. This all could be done very easily by just taking the shell of the project and putting propellers on it or just tweaking the software. <p>
         </div>
     </main>
 
     <footer class="copyright">© 2025 
-        <a href="https://yitce.carrd.co/" target="_blank"> Underwater Drone Team</a>
+        <a href="https://yitce.carrd.co/" target="_blank"> Underwater Drone Team and yes we come from the future </a>
     </footer>
 
 </div>
 
-<script src="https://replit.com/public/js/replit-badge.js" theme="purple" defer></script>
 </body>
 </html>
